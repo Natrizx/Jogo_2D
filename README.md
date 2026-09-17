@@ -8,4 +8,7 @@ QUINTA-FEIRA.
 27/08/2026 - Hoje começamos a preencher uma documentação no Excel sobre um jogo simples (2D) que iremos criar.
 
 TERÇA-FEIRA.
-08/09/2026- Hoje vimos os slides de Game Document Desing (GDD), analizando as mecanicas dentro do GDD, além de fazer duas tarefas, a priemira: uma tabela de balanciamento, fizemos duas, uma balanciada e outra desbalanciada. A ultima e segunda: "Justicativa" das mecanicas que adicionamos ao GDD, também fizemos desenhos de cada uma das mecanicas.
+08/09/2026 - Hoje vimos os slides de Game Document Desing (GDD), analizando as mecanicas dentro do GDD, além de fazer duas tarefas, a priemira: uma tabela de balanciamento, fizemos duas, uma balanciada e outra desbalanciada. A ultima e segunda: "Justicativa" das mecanicas que adicionamos ao GDD, também fizemos desenhos de cada uma das mecanicas.
+
+QUINTA-FEIRA.
+17/09/2026 - Hoje, programamos os movimentos ultilizando o -1, 0, 1 na UnityHub, alem dos  movimentos laterais fizemos também a programação do pulo: ao clicar no botão *space*
