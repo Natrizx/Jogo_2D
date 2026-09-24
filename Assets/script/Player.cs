@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         { 
-          rb.AddForce(new Vector2 (0f,5f),ForceMode2D.Impulse); // vai dar um impulço ao pulo para q ele pule e desça com naturalidade. 
+          rb.AddForce(new Vector2 (0f,10f),ForceMode2D.Impulse); // vai dar um impulço ao pulo para q ele pule e desça com naturalidade. 
         }
     }
 
