@@ -19,13 +19,13 @@ public class Player : MonoBehaviour
     
     void Update()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal"); // vai reconhecer o movimento horizontal
+        float moveHorizontal = Input.GetAxis("Horizontal"); // vai reconhecer o movimento horizontal, ou seja, andar para os lados esquerdo e direto.
 
-        rb.linearVelocity = new Vector2(moveHorizontal * speed, rb.linearVelocity.y); // vai aplicar movimento de 1,0,-1
+        rb.linearVelocity = new Vector2(moveHorizontal * speed, rb.linearVelocity.y); // vai aplicar movimentação de 1,0,-1
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         { 
-          rb.AddForce(new Vector2 (0f,10f),ForceMode2D.Impulse); // vai dar um impulço ao pulo para q ele pule e desça com naturalidade. 
+          rb.AddForce(new Vector2 (0f,10f),ForceMode2D.Impulse); // vai dar um impulso ao pular, fazendo que o jogador pule e desça com naturalidade. 
         }
     }
 
@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            isGrounded = true; // vai verificar quando ele vai ser verdadeiro
+            isGrounded = true; // vai verificar quando ele estiver no chão, se tiver, será cosiderado verdadeiro.
         }
         
 
@@ -47,7 +47,7 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            isGrounded = false; // vai reconhecer quando o player não estiver mais no chão ou seja um Game Object ( plataforma ), para que ele não pule infinitamente.  
+            isGrounded = false; // vai reconhecer quando o player não estiver mais no chão ou seja em um  Game Object ( plataforma ), para que ele não pule infinitamente.  
         }
     }
 
