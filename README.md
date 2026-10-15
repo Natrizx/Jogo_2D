@@ -14,4 +14,4 @@ TERÇA-FEIRA.
 22/09/2026 - Hoje, programamos os movimentos ultilizando o bool (-1, 0, 1) na UnityHub, além dos  movimentos laterais fizemos também a programação do pulo: ao clicar no botão *space*.
 
 QUINTA FEIRA.
-24/09/2026- 
+15/10/2026 - Fiz o painel (atraves do canvas), para fazer a tela de gameover e o botão de RESET (retorno).
