@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
 
     private bool isGrounded = false;
 
+    public MenuScene menu;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -39,7 +41,7 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Dano"))
         {
-            SceneManager.LoadScene(0);
+           menu.MostrarGameOver(); // reconhece/ puxar de um script para outro 
         }
     }
 
@@ -47,7 +49,14 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            isGrounded = false; // vai reconhecer quando o player não estiver mais no chão ou seja em um  Game Object ( plataforma ), para que ele não pule infinitamente.  
+            isGrounded = false; // vai reconhecer quando o player não estiver mais no chão ou seja em um  Game Object ( plataforma ), para que ele não pule infinitamente.
+            
+
+
+
+
+
+
         }
     }
 
