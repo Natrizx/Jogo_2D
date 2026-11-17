@@ -15,7 +15,7 @@ public class MenuScene : MonoBehaviour
       
         painelPause.SetActive(false); // SetActive vai ativar ou desativar determinada função dentro do jogo, nesse caso a tela de pause.
         painelGameOver.SetActive(false); // SetActive vai ativar ou desativar determinada função dentro do jogo , nesse caso o GameOver.
-
+       
     }
 
 
