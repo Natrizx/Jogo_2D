@@ -1,13 +1,23 @@
-using JetBrains.Annotations;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Vitoria: MonoBehaviour
-{ 
-    public void VoltarMenu()
+public class Vitoria : MonoBehaviour
+{
+    public MenuScene menu;
+    void Start()
     {
-        Time.timeScale= 1f;
-        SceneManager.LoadScene(0);
+
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    public void Passarfase()
+    {
+        SceneManager.LoadScene("Vitoria");
+    }
 }

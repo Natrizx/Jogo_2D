@@ -37,12 +37,21 @@ public class Player : MonoBehaviour
         {
             isGrounded = true; // vai verificar quando ele estiver no chão, se tiver, será cosiderado verdadeiro.
         }
-        
 
         if (collision.gameObject.CompareTag("Dano"))
         {
-           menu.MostrarGameOver(); // reconhece/ puxar de um script para outro 
+            menu.MostrarGameOver(); // reconhece/ puxar de um script para outro 
         }
+
+        if (collision.gameObject.CompareTag("PassarFase"))
+        {
+            SceneManager.LoadScene("Fase2");
+        }
+        if (collision.gameObject.CompareTag("VITORIA"))
+        {
+            SceneManager.LoadScene("Vitoria");
+        }
+
     }
 
     private void OnCollisionExit2D(Collision2D collision)

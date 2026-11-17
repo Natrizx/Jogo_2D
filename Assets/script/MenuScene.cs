@@ -59,7 +59,7 @@ public class MenuScene : MonoBehaviour
     {
         jogoAcabou =true;
         painelGameOver.SetActive(true);
-        Time .timeScale=1f;
+        Time .timeScale=0f;
     }
 
     public void Reiniciar()
