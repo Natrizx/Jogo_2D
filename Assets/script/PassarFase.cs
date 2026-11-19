@@ -4,20 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class PassarFase : MonoBehaviour
 {
-    public MenuScene menu;
-    void Start()
+
+    public void Passarfase()//Vareavel publica para passaras fases 
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    public void Passarfase()
-    {
-        SceneManager.LoadScene("Fase2");
+        SceneManager.LoadScene("Fase2");// paadar a fase dois 
     }
 }

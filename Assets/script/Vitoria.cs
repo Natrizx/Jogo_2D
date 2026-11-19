@@ -5,19 +5,9 @@ using UnityEngine.SceneManagement;
 public class Vitoria : MonoBehaviour
 {
     public MenuScene menu;
-    void Start()
+  
+    public void Passarfase() // vareavel publica de paasar para fase vitoria 
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    public void Passarfase()
-    {
-        SceneManager.LoadScene("Vitoria");
+        SceneManager.LoadScene("Vitoria");// paasar fase vitoria 
     }
 }
